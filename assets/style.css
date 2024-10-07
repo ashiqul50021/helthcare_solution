@@ -1,23 +1,22 @@
 .navbar {
     background-color: #232264;
     padding: 15px;
-
 }
 
 .navcontainer {
-    width: 1320px;
+    width: 100%;
+    max-width: 1320px;
     align-items: center;
     margin: auto;
     display: flex;
     justify-content: space-between;
-
 }
 
-.navbar-brand{
+.navbar-brand {
     color: #ffffff;
 }
 
-.navbar-nav{
+.navbar-nav {
     display: flex;
     flex-direction: row;
     gap: 30px;
@@ -31,8 +30,59 @@
     color: #2A3B97;
 }
 
-.banner-container{
-    width: 1320px;
+.banner-container {
+    width: 100%;
+    max-width: 1320px;
     align-items: center;
     margin: auto;
+}
+
+.banner-container img {
+    height: 200px;
+    width: fit-content;
+}
+
+/* Default hide hamburger icon and show nav items on larger screens */
+.navbar-toggler {
+    display: none;
+}
+
+/* Hide the menu on small screens */
+.nav-menu {
+    display: flex;
+}
+
+@media (max-width: 991.98px) {
+    /* Show hamburger icon and hide menu items */
+    .navbar-toggler {
+        display: block;
+        background-color: transparent;
+        border: none;
+        color: white;
+        font-size: 24px;
+    }
+
+    /* Hide the navigation menu */
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #232264;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-menu.active {
+        display: flex; /* Show the menu when toggled */
+    }
+
+    .nav-menu ul {
+        padding: 0;
+    }
+
+    .nav-menu .nav-item {
+        padding: 10px 0;
+    }
 }
