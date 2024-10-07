@@ -1,0 +1,38 @@
+.navbar {
+    background-color: #232264;
+    padding: 15px;
+
+}
+
+.navcontainer {
+    width: 1320px;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.navbar-brand{
+    color: #ffffff;
+}
+
+.navbar-nav{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #ffffff;
+}
+
+.navbar-nav .nav-item .nav-link.active {
+    color: #2A3B97;
+}
+
+.banner-container{
+    width: 1320px;
+    align-items: center;
+    margin: auto;
+}
