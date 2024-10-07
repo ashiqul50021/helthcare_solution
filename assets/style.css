@@ -1,88 +1,39 @@
+/* Customizing the colors and spacing */
+body {
+    background-color: #233e82;
+    color: #fff;
+}
+
+.card {
+    border-radius: 15px;
+    background-color: transparent;
+}
+
+.btn-outline-light {
+    border-radius: 15px;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.btn-circle {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.btn-light {
+    border-radius: 15px;
+    background-color: #fff;
+    color: #233e82;
+    font-size: 12px;
+}
+
 .navbar {
-    background-color: #232264;
-    padding: 15px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
-.navcontainer {
-    width: 100%;
-    max-width: 1320px;
-    align-items: center;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-}
-
-.navbar-brand {
-    color: #ffffff;
-}
-
-.navbar-nav {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-}
-
-.navbar-nav .nav-item .nav-link {
-    color: #ffffff;
-}
-
-.navbar-nav .nav-item .nav-link.active {
-    color: #2A3B97;
-}
-
-.banner-container {
-    width: 100%;
-    max-width: 1320px;
-    align-items: center;
-    margin: auto;
-}
-
-.banner-container img {
-    height: 200px;
-    width: fit-content;
-}
-
-/* Default hide hamburger icon and show nav items on larger screens */
-.navbar-toggler {
-    display: none;
-}
-
-/* Hide the menu on small screens */
-.nav-menu {
-    display: flex;
-}
-
-@media (max-width: 991.98px) {
-    /* Show hamburger icon and hide menu items */
-    .navbar-toggler {
-        display: block;
-        background-color: transparent;
-        border: none;
-        color: white;
-        font-size: 24px;
-    }
-
-    /* Hide the navigation menu */
-    .nav-menu {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 70px;
-        right: 0;
-        background-color: #232264;
-        width: 100%;
-        text-align: center;
-    }
-
-    .nav-menu.active {
-        display: flex; /* Show the menu when toggled */
-    }
-
-    .nav-menu ul {
-        padding: 0;
-    }
-
-    .nav-menu .nav-item {
-        padding: 10px 0;
-    }
+.fixed-bottom .navbar {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }

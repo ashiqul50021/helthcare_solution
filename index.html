@@ -1,70 +1,90 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Responsive Navbar</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Report System</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="assets/style.css" rel="stylesheet">
 </head>
-
 <body>
-
-    <!-- navbar -->
-    <nav class="navbar">
-        <div class="navcontainer">
-            <!-- navbar items -->
-            <div class="nav-logo">
-                <!-- Logo on the left-->
-                <a class="navbar-brand order-2 order-lg-0 ms-auto" href="#">Navbar</a>
-            </div>
-
-            <!-- menu on the right  -->
-            <div class="nav-menu">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Service</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">About</a>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Hamburger icon -->
-            <button class="navbar-toggler" type="button">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark p-2">
+        <div class="container-fluid d-flex justify-content-between">
+            <i class="fas fa-bars text-white"></i>
+            <i class="fas fa-battery-full text-white"></i>
         </div>
     </nav>
-    <!-- navbar end -->
 
-    <!-- banner -->
-    <div class="banner-container">
-        <img src="assets/images/3842.jpg_wh1200.jpg" alt="">
+    <!-- Header Section -->
+    <div class="container my-3">
+        <div class="card p-0 border-0 text-center">
+            <div class="card-body border-0 p-0">
+                <img src="assets/images/3842.jpg_wh1200.jpg" alt="Medical Report" class="img-fluid" style="border-radius: 15px;">
+            </div>
+        </div>
     </div>
-    <!-- banner End -->
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/82552c610d.js" crossorigin="anonymous"></script>
+    <!-- Appointment Button -->
+    <div class="container text-center mb-3">
+        <button class="btn btn-primary btn-lg w-100">Appointment</button>
+    </div>
 
-    <script>
-        // Using jQuery to toggle the navigation menu on click of hamburger icon
-        $(document).ready(function () {
-            $('.navbar-toggler').on('click', function () {
-                $('.nav-menu').toggleClass('active');
-            });
-        });
-    </script>
+    <!-- Service Buttons -->
+    <div class="container mb-3">
+        <div class="row">
+            <div class="col-4 text-center mb-2">
+                <button class="btn btn-outline-light w-100">
+                    <i class="fas fa-hospital-alt fa-2x"></i><br>General Hospital
+                </button>
+            </div>
+            <div class="col-4 text-center mb-2">
+                <button class="btn btn-outline-light w-100">
+                    <i class="fas fa-tooth fa-2x"></i><br>Dental Hospital
+                </button>
+            </div>
+            <div class="col-4 text-center mb-2">
+                <button class="btn btn-outline-light w-100">
+                    <i class="fas fa-dumbbell fa-2x"></i><br>Physio Therapy
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Links Section -->
+    <div class="container text-center mb-3">
+        <div class="d-flex justify-content-around">
+            <button class="btn btn-light btn-circle"><i class="fas fa-user-md"></i><br>My Doctor</button>
+            <button class="btn btn-light btn-circle"><i class="fas fa-users"></i><br>My Family</button>
+            <button class="btn btn-light btn-circle"><i class="fas fa-phone-alt"></i><br>Helpline</button>
+            <button class="btn btn-light btn-circle"><i class="fas fa-file-medical"></i><br>My Reports</button>
+            <button class="btn btn-light btn-circle"><i class="fas fa-hospital-user"></i><br>My Appointments</button>
+        </div>
+    </div>
+
+    <!-- Additional Services -->
+    <div class="container mb-3">
+        <div class="d-flex justify-content-center">
+            <button class="btn btn-light mx-2 w-50">24x7 Service</button>
+            <button class="btn btn-light mx-2 w-50">Online Service</button>
+            <button class="btn btn-light mx-2 w-50">Other</button>
+        </div>
+    </div>
+
+    <!-- Footer Menu -->
+    <nav class="navbar navbar-dark bg-primary fixed-bottom p-3">
+        <div class="container d-flex justify-content-around">
+            <button class="btn btn-light"><i class="fas fa-phone"></i> Call</button>
+            <button class="btn btn-light"><i class="fas fa-home"></i> Home</button>
+            <button class="btn btn-light"><i class="fas fa-user"></i> Me</button>
+        </div>
+    </nav>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
