@@ -4,6 +4,15 @@ body {
     color: #fff;
 }
 
+.web-logo {
+    height: 25%;
+    width: 14%;
+}
+
+.web-menu .nav-item .nav-link {
+    color: white;
+}
+
 .card {
     border-radius: 15px;
     background-color: transparent;
@@ -31,9 +40,190 @@ body {
 .navbar {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+
 }
+
+
+
 
 .fixed-bottom .navbar {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+}
+
+
+.appoinmentButton {
+    background: transparent;
+    border: 1px solid;
+    width: 50% !important;
+    color: white;
+}
+
+.service-button {
+    background: #2A3B97;
+    border: 0;
+    color: white;
+    border-radius: 15px;
+}
+
+.quicklinksection {
+    background-color: #2A3B97;
+    padding: 12px 0px;
+    border-radius: 15px;
+}
+
+.quicklinkbutton {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quicklinkicon {
+    background-color: white;
+    color: black;
+    padding: 10px 13px;
+    border-radius: 50%;
+}
+
+.quicklinktext {
+    background-color: white;
+    font-size: 15px;
+    border-radius: 6px;
+    padding: 0px 3px;
+    margin-top: 10px;
+    color: black;
+}
+
+.owl-carousel .owl-item.active {
+    /* width: 0 !important;
+    overflow: hidden; */
+}
+
+.footernav {
+    background-color: #2A3B95;
+}
+
+.nav-tabs {
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: 15px;
+}
+
+.nav-tabs .nav-link {
+    margin-bottom: -1px;
+    background: 0 0;
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    color: white;
+}
+
+.nav-link {
+    display: block;
+    padding: 1rem 20px;
+    color: #0d6efd;
+    text-decoration: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+
+.footer-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+
+.homeiconbutton {
+    background: #3B53A0;
+    padding: 15px;
+    border-radius: 50%;
+    /* color: white; */
+    margin-top: -30px;
+}
+
+
+
+/* Mobile styles */
+@media (max-width: 480px) {
+    .web-navbar {
+        display: none;
+    }
+
+    .web-header {
+        display: none;
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 481px) and (max-width: 768px) {
+    .web-navbar {
+        display: none;
+    }
+
+    .web-header {
+        display: none;
+    }
+}
+
+/* Small laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .web-navbar {
+        display: none;
+    }
+
+    .web-header {
+        display: none;
+    }
+}
+
+/* Desktops */
+@media (min-width: 1025px) and (max-width: 1440px) {
+
+    .mobile-navbar {
+        display: none;
+    }
+
+    .mobile-header {
+        display: none;
+    }
+
+    .footernav {
+        display: none;
+    }
+}
+
+/* Large desktops */
+@media (min-width: 1441px) {
+
+    /* navbar */
+
+
+    .web-navbar {
+        display: block;
+    }
+
+    .mobile-navbar {
+        display: none;
+    }
+
+
+    /* header */
+    .web-header {
+        display: block;
+    }
+
+    .mobile-header {
+        display: none;
+    }
+
+    .footernav {
+        display: none;
+    }
+
+
+
 }
