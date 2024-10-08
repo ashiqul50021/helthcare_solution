@@ -62,7 +62,7 @@
 
     <!-- web header -->
     <div class="container-fluid web-header">
-        <img src="assets/images/3842.jpg_wh1200.jpg" alt="Medical Report" class="w-100">
+        <img src="assets/images/banner.png" alt="Medical Report" class="w-100">
     </div>
     <!-- web header end -->
 
@@ -78,12 +78,68 @@
     </div>
 
     <!-- Appointment Button -->
-    <div class="container text-center mb-3 mt-3">
+    <!-- web appoinmentButton -->
+    <div class="container text-center mb-3 mt-3 web-appoinment">
+        <img class="web-appoinment-img" src="assets/images/appoinmentbanner.png" alt="">
+    </div>
+    <!-- web appoinmentButton end -->
+
+
+    <!-- mobile appoinmentButton  -->
+    <div class="container text-center mb-3 mt-3 mobile-appoinment">
         <button class="btn appoinmentButton">Appointment</button>
     </div>
+    <!-- mobile appoinmentButton end -->
 
-    <!-- Service Buttons -->
-    <div class="container mb-3">
+
+    <!-- Service section -->
+    <!-- web service section -->
+    <div class="container mb-3 web-service mt-4">
+        <h2 class="text-center mb-3">Our Service</h2>
+
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card service-card h-100">
+                    <div class="text-center">
+                        <i class="fa-regular fa-hospital fa-3x"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">General Hospital</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card service-card h-100">
+                    <div class="text-center">
+                        <i class="fas fa-tooth fa-3x"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Dental Hospital</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card service-card h-100">
+                    <div class="text-center">
+                        <i class="fas fa-dumbbell fa-3x"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Physio Therapy</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- web service section end -->
+    <div class="container mb-3 mobile-service">
         <div class="row">
             <div class="col-4 text-center mb-2">
                 <button class="btn service-button w-100">
@@ -104,7 +160,58 @@
     </div>
 
     <!-- Quick Links Section -->
-    <div class="container text-center mb-3">
+    <!-- web quick link section -->
+    <div class="container text-center mb-3 mt-4 web-quick-link">
+        <h2 class="text-center mb-3">Quick Link Section</h2>
+        <div class="owl-carousel">
+
+            <div class="col item">
+                <div class="card quick-link-card h-100">
+                    <div>
+                        <i class="fas fa-user-md fa-3x"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">My Doctor</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col item">
+                <div class="card quick-link-card h-100">
+                    <div>
+                        <i class="fas fa-users fa-3x"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">My Family</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col item">
+                <div class="card quick-link-card h-100">
+                    <div>
+                        <i class="fas fa-phone-alt fa-3x"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Helpline</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col item">
+                <div class="card quick-link-card h-100">
+                    <div>
+                        <i class="fas fa-file-medical fa-3x"></i>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">My Reports</h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- web quick link section end -->
+
+    <!-- mobile quick link section  -->
+    <div class="container text-center mb-3 mobile-quick-link">
         <div class="owl-carousel quicklinksection">
             <div class="item quicklinkbutton"><span class="quicklinkicon"><i class="fas fa-user-md"></i></span> <span
                     class="quicklinktext">My Doctor</span></div>
@@ -122,9 +229,79 @@
             </div>
         </div>
     </div>
+    <!-- mobile quick link section end -->
+
+
 
     <!-- Additional Services -->
-    <div class="container mb-3">
+    <!-- addition service web -->
+    <div class="container mb-3 mt-4 additional-service-web">
+        <h2 class="text-center mb-3">Additional Service</h2>
+        <div class="container mt-5">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab"
+                        aria-controls="home" aria-selected="true">24/7 Serivce</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab"
+                        aria-controls="profile" aria-selected="false">Online Service</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#contact" role="tab"
+                        aria-controls="contact" aria-selected="false">Other</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="container mb-3">
+                        <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+                            <div class="col">
+                                <div class="card service-card h-100">
+                                    <div class="text-center">
+                                        <i class="fa-regular fa-hospital fa-3x"></i>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">General Hospital</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card service-card h-100">
+                                    <div class="text-center">
+                                        <i class="fa-regular fa-hospital fa-3x"></i>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">General Hospital</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card service-card h-100">
+                                    <div class="text-center">
+                                        <i class="fa-regular fa-hospital fa-3x"></i>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">General Hospital</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <p class="mt-3">Here is your profile information.</p>
+                </div>
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                    <p class="mt-3">Feel free to contact us!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- addition service web end -->
+
+    <!-- addisional service mobile  -->
+    <div class="container additional-service-mobile" style="margin-bottom: 100px;">
         <div class="container mt-5">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
@@ -171,8 +348,91 @@
             </div>
         </div>
     </div>
+    <!-- addisional service mobile end -->
 
-    <!-- Footer Menu -->
+
+    <!-- footer web  -->
+    <footer class="bg-dark text-white pt-5 pb-4 footer-web">
+        <div class="container text-center text-md-left">
+            <div class="row text-center text-md-left">
+                <!-- About Section -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold">Company Name</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta architecto suscipit sint veniam
+                        perferendis quia possimus.</p>
+                </div>
+
+                <!-- Links Section -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold">Products</h5>
+                    <p><a href="#" class="text-white" style="text-decoration:none;"> Product 1</a></p>
+                    <p><a href="#" class="text-white" style="text-decoration:none;"> Product 2</a></p>
+                    <p><a href="#" class="text-white" style="text-decoration:none;"> Product 3</a></p>
+                    <p><a href="#" class="text-white" style="text-decoration:none;"> Product 4</a></p>
+                </div>
+
+                <!-- Useful Links Section -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold">Useful Links</h5>
+                    <p><a href="#" class="text-white" style="text-decoration:none;"> Your Account</a></p>
+                    <p><a href="#" class="text-white" style="text-decoration:none;"> Become an Affiliate</a></p>
+                    <p><a href="#" class="text-white" style="text-decoration:none;"> Shipping Rates</a></p>
+                    <p><a href="#" class="text-white" style="text-decoration:none;"> Help</a></p>
+                </div>
+
+                <!-- Contact Section -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold">Contact</h5>
+                    <p><i class="fas fa-home mr-3"></i> New York, NY 233, US</p>
+                    <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
+                    <p><i class="fas fa-phone mr-3"></i> +01 234 567 88</p>
+                    <p><i class="fas fa-print mr-3"></i> +01 234 567 89</p>
+                </div>
+            </div>
+
+            <!-- Footer Bottom Section -->
+            <div class="row align-items-center">
+                <div class="col-md-7 col-lg-8">
+                    <p class="text-center text-md-left">© 2024 Copyright:
+                        <a href="#" class="text-white" style="text-decoration:none;">
+                            <strong> yourcompany.com</strong>
+                        </a>
+                    </p>
+                </div>
+
+                <!-- Social Media Links -->
+                <div class="col-md-5 col-lg-4">
+                    <div class="text-center text-md-right">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;">
+                                    <i class="fab fa-google-plus"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer web end -->
+
+    <!-- Footer mobile Menu -->
     <nav class="fixed-bottom footernav">
         <div class="container d-flex justify-content-around">
             <button class="btn footer-button "><span><i class="fas fa-phone fa-2x"></i></span><span>Call</span></button>
@@ -205,7 +465,7 @@
                 responsive: {
                     0: { items: 4 },      // 1 item for small screens
                     600: { items: 4 },    // 2 items for medium screens
-                    1000: { items: 4 }    // 3 items for large screens
+                    1000: { items: 3 }    // 3 items for large screens
                 }
             });
         });
